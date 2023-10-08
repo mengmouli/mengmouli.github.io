@@ -25,7 +25,7 @@ a:hover {
 
 /* Left Column Styles */
 #Left_Column {
-    width: 30%; 
+    width: 27%; 
     float: left;
     padding: 20px 20px 20px 20px;  /* Removed padding from the top */
     box-sizing: border-box;
@@ -53,6 +53,12 @@ a:hover {
     border-radius: 50%;
 }
 
+#Navigation {
+    font-size: 2vw;
+    word-wrap: break-word;  /* Wrap long words if necessary */
+    overflow: hidden;  /* Hide overflowing content */
+}
+
 /* Main Content Styles */
 #Contents_block {
     border-bottom: 2px solid #333; /* Added a bottom border */
@@ -63,5 +69,19 @@ a:hover {
     width: calc(100% - 40px); /* Adjusted width */
     padding: 20px;
     margin-left: 0; /* Space between columns */
+}
+
+/* Add media query for larger devices where 4vw might be too big */
+@media (min-width: 768px) {
+    #Navigation {
+        font-size: 1.5em;  /* Adjust as needed */
+    }
+}
+
+/* Media query for very small devices */
+@media (max-width: 400px) {
+    #Navigation {
+        font-size: 3vw;  /* Adjust if necessary */
+    }
 }
 
