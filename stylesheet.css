@@ -37,13 +37,13 @@ a:hover {
 #Right_Column {
     width: 70%; 
     float: right;
-    padding: 0 20px 20px 20px;  /* Removed padding from the top */
+    padding: 20px 20px 20px 20px;  /* Removed padding from the top */
     box-sizing: border-box;
     border-radius: 5px;
 }
 
 #PageTop h1 {
-    font-size: 1 em;
+    font-size: 2 em;
     font-weight: bold;
     margin: 0; /* Removes any default margins */
 }
@@ -55,7 +55,8 @@ a:hover {
 
 /* Main Content Styles */
 #Contents_block {
-    
+    border-bottom: 2px solid #333; /* Added a bottom border */
+
 }
 #Content {
     float: left; 
