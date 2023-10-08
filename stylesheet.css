@@ -10,6 +10,8 @@ body {
     line-height: 1.6;
     color: #333;
     background-color: LIGHTGRAY;
+    margin-left: 15%;  /* Space on the left */
+    margin-right: 15%; /* Space on the right */
 }
 
 a {
@@ -23,17 +25,27 @@ a:hover {
 
 /* Left Column Styles */
 #Left_Column {
-    width: 20%; /* Adjusted width */
+    width: 25%; 
     float: left;
-    padding: 20px;
+    padding: 20px 20px 20px 20px;  /* Removed padding from the top */
     box-sizing: border-box;
     background-color: CADETBLUE;
     border-radius: 5px;
 }
 
-#PageTop li {
-    font-size: 1.8em;
+/* Right Column Styles */
+#Right_Column {
+    width: 70%; 
+    float: right;
+    padding: 0 20px 20px 20px;  /* Removed padding from the top */
+    box-sizing: border-box;
+    border-radius: 5px;
+}
+
+#PageTop h1 {
+    font-size: 1 em;
     font-weight: bold;
+    margin: 0; /* Removes any default margins */
 }
 
 #Personal_Profile img.profile {
@@ -42,8 +54,13 @@ a:hover {
 }
 
 /* Main Content Styles */
-#Biography {
-    float: right; /* Adjusted to right */
-    width: calc(100% - 370px); /* Adjusted width based on #Left_Column's new width */
+#Contents_block {
+    
+}
+#Content {
+    float: left; 
+    width: calc(100% - 40px); /* Adjusted width */
     padding: 20px;
-   
+    margin-left: 0; /* Space between columns */
+}
+
