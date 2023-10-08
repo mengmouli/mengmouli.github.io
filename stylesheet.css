@@ -1,86 +1,49 @@
-	body {background-color: LIGHTGRAY;
-		margin-left: 3%;
-		margin-right: 3%;
-		}
+/* Reset some default browser styles */
+body, div, h2, p, ul, li {
+    margin: 0;
+    padding: 0;
+}
 
-	h1 {background-color: DEEPSKYBLUE;border-radius: 5px;}
-	
-	h2 {background-color: CADETBLUE;
-		border-radius: 5px;
-		}
-	
-	h3 {background-color: MEDIUMAQUAMARINE;
-		border-radius: 5px;}
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: LIGHTGRAY;
+}
 
-	.profile {display: block;
-		margin-right: 1%;
-		margin-bottom: 1%;
-		padding: 3px;
-		background-color: silver;
-		border-radius: 5px;
-		float: left;
-		width: 45%; height: auto;
-		}
+a {
+    color: #0077CC;
+    text-decoration: none;
+}
 
+a:hover {
+    text-decoration: underline;
+}
 
-	#nav {width: 66%; float: right;
-		background-color: CADETBLUE;
-		border-radius: 5px;
-		font-size: 1.5em;
-		font-weight: bold;
-	}
+/* Left Column Styles */
+#Left_Column {
+    width: 15%; /* Adjusted width */
+    float: left;
+    padding: 20px;
+    box-sizing: border-box;
+    background-color: CADETBLUE;
+    border-radius: 5px;
+}
 
-	#nav ul {
-		padding: 0;
-		margin:0;
-		list-style-type: none;
-		text-align: center;
-	}
-	#nav li {
-		display: inline;
-		padding: 20px;
-		vertical-align: middle;
-	}
-	#nav a {text-decoration: none; color: black;
-		padding: 8px 8px 8px 8px;
-		vertical-align: middle;
-		float: :left;}
+#PageTop li {
+    font-size: 1.8em;
+    font-weight: bold;
+}
 
-	#nav a:hover {color: white;}
+#Personal_Profile img.profile {
+    width: 100%;
+    border-radius: 50%;
+}
 
-	#PageTop  {
-		padding: 0;
-		margin:0;
-		list-style-type: none;
-		text-align: center;
-		background-color: CADETBLUE;
-		border-radius: 5px;
-		font-size: 1.5em;
-		font-weight: bold;
-	}
-
-	#PageTop li {
-		display: inline;
-		padding: 20px;
-		vertical-align: middle;
-	}
-
-	#Left_Column {width: 33%; float: left;}
-
-	#Personal_Profile p {width: 50%; float: middle; margin-left: auto;}
-
-	#Latest_News {text-align: center;\\margin-top: 0px;}
-
-
-
-	#subsection {width: 66%; float: right;}
-
-	#Biography {width: 65%; float: right;}
-	#Biography p {font-size: 1.2em;}
-
-	#Publications {width: 65%; float: right;}
-
-	#Miscellaneous {width: 65%; float: right;}
-
-	\\a:hover {cursor: crosshair;}
-	
+/* Main Content Styles */
+#Biography {
+    float: right; /* Adjusted to right */
+    width: calc(100% - 370px); /* Adjusted width based on #Left_Column's new width */
+    padding: 20px;
+   
