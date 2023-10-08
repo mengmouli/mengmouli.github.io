@@ -23,7 +23,7 @@ a:hover {
 
 /* Left Column Styles */
 #Left_Column {
-    width: 15%; /* Adjusted width */
+    width: 20%; /* Adjusted width */
     float: left;
     padding: 20px;
     box-sizing: border-box;
