@@ -172,11 +172,9 @@ a:hover {
 }
 
 /* Responsive behavior */
-
 @media (max-width: 768px) {
   #Left_Column, #Right_Column {
     float: none;
     width: 100%;
-    padding: 10px 5%;
   }
 }
