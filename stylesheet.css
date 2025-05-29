@@ -176,7 +176,16 @@ a:hover {
 @media (max-width: 768px) {
   #Left_Column, #Right_Column {
     float: none;
+    display: block;
+  }
+
+  #Left_Column {
     width: 100%;
-    padding: 10px 5%;
+    margin-bottom: 20px;
+  }
+
+  #Right_Column {
+    width: auto;  /* Keep natural content width */
   }
 }
+
