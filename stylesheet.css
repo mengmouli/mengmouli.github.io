@@ -150,5 +150,31 @@ a:hover {
   color: #666;
 }
 
+/* Adjusted layout for better alignment */
+.icon-list li, .nav-list li {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin: 10px 0;
+  font-size: 15px;
+  line-height: 1.5;
+}
 
+.icon-list i, .nav-list i {
+  min-width: 20px;
+  text-align: center;
+  color: #444;
+}
 
+/* Optional: constrain width for better layout */
+#Left_Column {
+  max-width: 300px;
+}
+
+/* Responsive behavior */
+@media (max-width: 768px) {
+  #Left_Column, #Right_Column {
+    float: none;
+    width: 100%;
+  }
+}
