@@ -200,8 +200,9 @@ a:hover {
   }
 
 @media only screen and (max-width: 768px) {
-  .mobile-hide {
-    display: none;
+  .hide-on-mobile {
+    display: none !important;
   }
 }
+
 
