@@ -66,12 +66,13 @@ a:hover {
     border-bottom: 2px solid #333; /* Added a bottom border */
 
 }
+
 #Content {
-    float: left; 
-    width: calc(100% - 40px); /* Adjusted width */
-    padding: 20px;
-    margin-left: 0; /* Space between columns */
+  width: 100%;
+  padding: 20px 12px;
+  box-sizing: border-box;
 }
+
 
 /* Add media query for larger devices where 4vw might be too big */
 @media (min-width: 768px) {
@@ -168,10 +169,6 @@ a:hover {
   color: #444;
 }
 
-/* Optional: constrain width for better layout */
-#Left_Column {
-  max-width: 300px;
-}
 
 /* Responsive behavior */
 
@@ -179,15 +176,17 @@ a:hover {
   #Left_Column, #Right_Column {
     float: none;
     display: block;
+    width: 100%;
+    box-sizing: border-box;
   }
 
   #Left_Column {
-    width: 100%;
     margin-bottom: 20px;
   }
 
   #Right_Column {
-    width: auto;  /* Keep natural content width */
+    margin: 0;
+    padding: 0 12px;
   }
 }
 
@@ -198,11 +197,29 @@ a:hover {
     max-width: 1100px;
     padding: 0 20px;
   }
+}
 
 @media only screen and (max-width: 768px) {
-  .hide-on-mobile {
-    display: none !important;
+  .nav-list {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 8px;
+    padding: 0;
+  }
+
+  .nav-list li {
+    margin: 0;  /* remove vertical margin */
+  }
+
+  .nav-list a {
+    padding: 6px 10px;
+    font-size: 14px;
   }
 }
 
 
+html {
+  overflow-y: scroll;
+}
