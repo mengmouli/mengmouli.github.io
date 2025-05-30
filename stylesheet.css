@@ -131,6 +131,19 @@ a:hover {
   color: #007acc;
 }
 
+/* Remove excessive list indentation */
+#Content ol {
+  padding-left: 1em;   /* instead of default ~2.5em */
+  margin-left: 0;
+}
+
+/* Make individual entries more compact */
+#Content ol li {
+  margin-bottom: 10px;   /* Reduce spacing between papers */
+  line-height: 1.4;      /* Slightly tighter than default 1.6 */
+}
+
+
 #Personal_Profile h1 {
   font-size: 26px;
   margin-bottom: 10px;
